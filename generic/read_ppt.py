@@ -2,7 +2,7 @@
 from pyjavaproperties import Properties
 
 p_file = Properties()
-p_file.load(open("config.properties"))
+p_file.load(open("../config.properties"))
 
 value =p_file["ITO"]
 

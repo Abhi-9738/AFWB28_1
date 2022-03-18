@@ -1,4 +1,5 @@
 import pytest
+
 from pyjavaproperties import Properties
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
@@ -20,6 +21,7 @@ class BaseTest:
         p_file.load(open("config.properties"))
 
         self.xl_path = p_file['XLPATH']
+
 
         # open the browser
         use_grid=p_file['USEGRID']
